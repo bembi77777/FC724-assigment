@@ -87,16 +87,16 @@ nav a:hover span {
     font-size: 70px;
     color:#d6e1f0;
     position: absolute;
-    top: 60px;
-    left: 50px;
+    top: 90px;
+    left: 80px;
 
 }
 .content p{
     margin: 10px 0 30px;
     color: #faf6f6;
     position: fixed;
-    top: 215px;
-    left: 550px;
+    top: 250px;
+    left: 590px;
     font-size: 28px;
     height: 200px;
     width: 700px;
@@ -130,7 +130,7 @@ img{
     color:#cddfec;
     position: absolute;
     top: 40px;
-    left: 50px;
+    left: 80px;
 
 }
 .information p{
@@ -138,9 +138,9 @@ img{
     color: #faf6f6;
     position: fixed;
     top: 270px;
-    left: 300px;
+    left: 330px;
     font-size: 28px;
-    height: 200px;  
+    height: 200px;
     width: 750px;
     
 }
