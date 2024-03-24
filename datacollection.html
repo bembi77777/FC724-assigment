@@ -22,40 +22,18 @@
     </header>
     <main>
       <section>
-        <h2 class="heading">Student Progress Questionnaire</h2>
-        <form action="submit.php" method="post" class="form-container">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="studentNumber">Student Number:</label>
-          <input type="text" id="studentNumber" name="studentNumber" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="grades">Grades Obtained:</label>
-          <input type="text" id="grades" name="grades" required />
-
-          <label for="satisfaction">Overall Satisfaction:</label>
-          <select id="satisfaction" name="satisfaction" required>
-            <option value="excellent">Excellent</option>
-            <option value="good">Good</option>
-            <option value="average">Average</option>
-            <option value="poor">Poor</option>
-          </select>
-
-          <label for="improvement">Suggestions for Improvement:</label>
-          <textarea
-            id="improvement"
-            name="improvement"
-            rows="4"
-            cols="50"
-            required
-          ></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+    <h2 class="heading">Student Progress Questionnaire</h2>
+    <form method="post" class="form-container">
+        {{ form.csrf_token }}
+        <div>{{ form.name.label }} {{ form.name }}</div>
+        <div>{{ form.student_number.label }} {{ form.student_number }}</div>
+        <div>{{ form.email.label }} {{ form.email }}</div>
+        <div>{{ form.grades.label }} {{ form.grades }}</div>
+        <div>{{ form.satisfaction.label }} {{ form.satisfaction }}</div>
+        <div>{{ form.suggestions.label }} {{ form.suggestions }}</div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
     </main>
     <footer>
       <p>@binderiya</p>
