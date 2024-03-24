@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    
+    background-image: url('University-Glasgow-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #4682B4;
+    padding: 20px 0;
+    text-align: inline;
+}
+nav {
+    text-align: center;
+  }
+.sites {
+    display: inline-block;
+  }
+.sites a {
+    margin: 0 10px;
+  }
+nav a {
+    font-size: 1.2em;
+    font-family:  Garamond serif;
+    font-weight: 300;
+    color: #d8def1;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: 0.5s;
+    position: relative; 
+    
+}
+
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(62, 178, 232);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+nav a:hover {
+    color: rgb(62, 178, 232);
+}
+
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid rgb(56, 111, 114);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;}
+.content{
+    margin-top: 10%;
+    max-width: 700px;
+    position: absolute;
+}
+.content h2{
+    font-size: 70px;
+    color:#d6e1f0;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+
+}
+.content p{
+    margin: 10px 0 30px;
+    color: #faf6f6;
+    position: fixed;
+    top: 215px;
+    left: 550px;
+    font-size: 28px;
+    height: 200px;
+    width: 700px;
+
+
+}
+
+img{
+    width: 160px;
+    position: absolute;
+  top: 3px;
+  left: 16px;
+  font-size: 18px;
+
+}
+.text{
+    color: rgb(210, 218, 226);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 15px;
+}
+.imformation{
+    margin-top: 10%;
+    max-width: 700px;
+    position: absolute;
+}
+.information h2{
+    padding-top: 100px;
+    font-size: 70px;
+    color:#cddfec;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+
+}
+.information p{
+    margin: 10px 0 30px;
+    color: #faf6f6;
+    position: fixed;
+    top: 270px;
+    left: 300px;
+    font-size: 28px;
+    height: 200px;  
+    width: 750px;
+    
+}
+.heading{
+
+    font-size: 200%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: #d8def1;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.form-container label {
+    text-align: left;
+    color: #d6e1f0;
+    width: 300px; 
+    margin-bottom: 1em;
+}
+  
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 300px; 
+    border-radius: 10px; 
+    border: 1px solid lightblue; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    background-color: #f0f8ff;
+}
+.form-container button {
+    width: 150px; 
+    padding: 10px; 
+    border-radius: 10px; 
+    background-color: lightblue; 
+    border: none; 
+    cursor: pointer; 
+}
+  
+.form-container button:hover {
+    background-color: #add8e6; 
+}
+footer ,p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+head{
+    nav {
+        text-align: center;
+      }
+      .sites {
+        display: inline-block;
+      }
+      .sites a {
+        margin: 0 10px;
+      }
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.anime{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
